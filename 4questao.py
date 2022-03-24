@@ -21,19 +21,19 @@ while True:
                 idade = int(input("Digite a idade: "))
 
                 if(sexo == 2 and idade > idade_mulher_mais_velha):
-                    nome_mulher_mais_velha = nome
-                    idade_mulher_mais_velha = idade
+                    nome_mulher_mais_velha = nome #nome da mulher mais velha
+                    idade_mulher_mais_velha = idade #se idade digitada maior que a idade_mulher_mais_velha, faca idade_mulher_mais_velha = idade digitada
             
                 elif(sexo == 1 and idade < idade_homem_mais_novo):
                     nome_homem_mais_novo = nome
                     idade_homem_mais_novo = idade
             else:
-                break #saida do programa
+                break #saida do programa retorna os resultados
         break
     except ValueError:
         print("Digite apenas numeros")
     except KeyboardInterrupt:
-        print("\nGoodbye friend")
+        print("\nGoodbye friend") #mensagem para interrupção com ctrl + c
         exit()
 
 if(nome_homem_mais_novo != "" and nome_mulher_mais_velha != ""):
