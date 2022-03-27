@@ -8,6 +8,10 @@ dr_whells = random.randint(1,10)
 jay_garrick = random.randint(1,10)
 max_mercury = random.randint(1,10)
 
+while jesse_quick == barry_allen:
+    barry_allen = random.randint(1,10)
+
+
 vencedor1 = ""
 vencedor2 = ""
 vencedor3 = ""
